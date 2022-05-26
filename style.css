@@ -1,0 +1,353 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.margin{
+    margin: 0 15px 0 15px; 
+}
+
+/*
+    Menu barra
+*/
+
+#menu-nav{
+    position: fixed;
+    top: -100%;
+    height: 90%;
+    width: 100%;
+    padding: 0 15px;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 400ms;
+    box-shadow: -1px 18px 69px -25px rgba(0,0,0,1);
+}
+
+#menu-nav.active{
+    top: 0;
+}
+
+#menu-nav .edit-search{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+#menu-nav .edit-search p{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#menu-nav .edit-search i{
+    position: absolute;
+    right: 0;
+    -webkit-text-stroke: 0.8px black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-close-thin:before{
+    content: '\00d7';
+}
+
+#menu-nav .locations{
+    margin: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+#menu-nav .locations h4{
+    font-weight: 800;
+    font-size: 9px;
+    line-height: 11px;
+    color: #333333;
+}
+
+.container-menu-input{
+    display: flex;
+}
+
+.menu-loc, .menu-guest{
+    padding:7px 30px ;
+}
+
+.menu-loc{
+    margin-bottom: 20px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.menu-guest{
+    margin-bottom: 20px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.menu-guest:hover, .menu-loc:hover{
+    outline: 0.5px solid black;
+}
+
+.menu-loc input, .menu-guest input{
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#menu-nav .locations .other-location{
+    display: flex;
+    flex-direction: column;
+}
+
+.visited-location{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.visited-location i{
+    padding-right: 10px;
+}
+
+.btn-search{
+    text-align: center;
+    margin: auto 0 30px 0;
+}
+
+.btn-search button{
+    text-align: center;
+    border-radius: 16px;
+    background-color: rgba(235, 87, 87, 0.9);
+    padding: 12px 22px;
+    border: none;
+    color: white;
+}
+
+.btn-search button i{
+    padding-right: 5px;
+}
+
+
+/*
+    FIN BARRA MENU
+*/
+
+.cont-logo{
+    display: flex;
+    padding-bottom: 30px;
+    padding: 15px 0 40px 10px;
+}
+
+
+.cont-logo .search{
+    display: flex;
+    margin-left: auto;
+}
+
+.cont-logo .search span{
+
+    font-weight: bold;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.search .btn-menu-search{
+    padding: 5px 10px;
+    color: rgba(235, 87, 87, 0.9);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-menu-search i{
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+.place, .guests{
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.place:hover, .guests:hover{
+    outline: 1px solid;
+}
+
+
+.place input, .guests input{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+    border: none;
+}
+
+
+.place{
+
+    color: #333333
+}
+
+
+.guests{
+    color: #BDBDBD;
+}
+
+.title-search{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px; 
+}
+
+.title-search h3{
+    display: inline-block;
+    color: #333333;   
+}
+
+.title-search span{
+    color: #4F4F4F;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.apartment-section{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.apartment-section .container-apartment{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.apartment-section .container-apartment .img-container{
+    width: 350px;
+    height: 238px;
+}
+
+.apartment-section .container-apartment .img-data{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.desc-style{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.img-data #host{
+    font-weight: 900;
+    font-size: 10px;    
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+}
+
+.img-data #desc{
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 8px;
+    color: #828282;
+}
+
+.img-data #rating{
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 8px;
+    color: #828282;
+    line-height: 15px;
+}
+
+.fa-star{
+    font-size: 16px;
+    color: rgba(235, 87, 87, 0.72);
+    padding: 5px 0;
+}
+
+.container-apartment h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+
+    margin-bottom: 35px;
+}
+
+/*
+
+    ******  Responsive ******  
+
+*/
+
+@media only screen and  (max-width: 450px) {
+
+    .cont-logo{
+        display: block;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo{
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .place span, .guests span{
+        display: none;
+    }
+}
+
+
+/*
+    max-width = de un Width especifico hacia abajo
+    ejemplo : 
+        max-width :500px
+
+        traducido seria de un width de 500 (maximo) para abajo haz esto ....
+    
+    min-width = seria al contrario de un width dado hacia arriba haz esto...       
+
+
+*/
